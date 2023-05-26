@@ -2,10 +2,16 @@
     <div class="card mb-4">
       <div class="card-header pb-0 d-flex justify-content-between align-items-center">
         <h6>Daftar Karyawan</h6>
-        <form action="" method="post">
-          @csrf
-          <input type="text" wire:model='search' name="search" placeholder="Search" class="form-control">
-        </form>
+        <div class="d-flex gap-4">
+          @if (auth()->user()->role == 'admin')
+            <button class="btn btn-secondary" wire:click="export">Download Excel</button>   
+          @endif
+          <form action="" method="post">
+            @csrf
+            <input type="text" wire:model='search' name="search" placeholder="Search" class="form-control">
+          </form>
+        </div>
+
       </div>
       <div class="card-body px-0 pt-0 pb-2">
         <div class="table-responsive p-0">

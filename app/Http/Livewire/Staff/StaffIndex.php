@@ -2,9 +2,11 @@
 
 namespace App\Http\Livewire\Staff;
 
+use App\Exports\StaffsExport;
 use App\Models\Staff;
 use Livewire\Component;
 use Livewire\WithPagination;
+use Maatwebsite\Excel\Facades\Excel;
 
 class StaffIndex extends Component
 {
@@ -35,5 +37,9 @@ class StaffIndex extends Component
 
 
         return view('livewire.staff.staff-index',['staffs'=>$staffs]);
+    }
+
+    public function export(){
+        return Excel::download(new StaffsExport, 'Staff.xlsx');
     }
 }

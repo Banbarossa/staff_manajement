@@ -33,7 +33,7 @@
                   </button>
                   <ul class="dropdown-menu">
                     <li>
-                      <button wire:click="$emit('getId',{{$item->id}})" class="border-0 bg-transparent d-inline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>   
+                      <button wire:click="$emit('getId',{{$item->id}})" class="border-0 bg-transparent d-inline dropdown-item" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Edit</button>   
                       
                     </li>
                     <li><a class="dropdown-item" href="#" wire:click="hapus({{$item->id}})">Hapus</a></li>

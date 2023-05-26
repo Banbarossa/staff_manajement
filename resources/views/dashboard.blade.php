@@ -12,7 +12,7 @@
     </div>
 </x-page-title>
     <div class="container-fluid mt-5">
-        <div class="row">
+        <div class="row container">
             <div class="col-xl-3 col-sm-6 mb-xl-0 mb-4">
               <div class="card">
                 <div class="card-body p-3">
@@ -22,7 +22,7 @@
                         <p class="text-sm mb-0 text-capitalize font-weight-bold">Staff Aktif</p>
                         <h5 class="font-weight-bolder mb-0">
                           {{$active->count()}}
-                          <span class="text-success text-sm font-weight-bolder ms-1">Orang</span>
+                          <span class="text-primary text-sm font-weight-bolder ms-1">Orang</span>
                         </h5>
                       </div>
                     </div>
@@ -44,7 +44,7 @@
                         <p class="text-sm mb-0 text-capitalize font-weight-bold">Staff Non Aktif</p>
                         <h5 class="font-weight-bolder mb-0">
                             {{$inactive->count()}}
-                          <span class="text-success text-sm font-weight-bolder">+3%</span>
+                          <span class="text-primary text-sm font-weight-bolder">Orang</span>
                         </h5>
                       </div>
                     </div>
@@ -66,7 +66,7 @@
                         <p class="text-sm mb-0 text-capitalize font-weight-bold">Admin</p>
                         <h5 class="font-weight-bolder mb-0">
                             {{$admin->count()}}
-                          <span class="text-danger text-sm font-weight-bolder">Orang</span>
+                          <span class="text-primary text-sm font-weight-bolder">Orang</span>
                         </h5>
                       </div>
                     </div>
@@ -88,7 +88,7 @@
                         <p class="text-sm mb-0 text-capitalize font-weight-bold">User</p>
                         <h5 class="font-weight-bolder mb-0">
                             {{$user->count()}}
-                          <span class="text-success text-sm font-weight-bolder">Orang</span>
+                          <span class="text-primary text-sm font-weight-bolder">Orang</span>
                         </h5>
                       </div>
                     </div>

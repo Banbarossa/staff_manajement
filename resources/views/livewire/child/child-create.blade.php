@@ -18,7 +18,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="nik_anak">{{__('NIK_anak')}}</label>
+                <label for="nik_anak">{{__('NIK Anak')}}</label>
                 <input type="text" id="nik_anak" wire:model="nik_anak" class="form-control @error('nik_anak') is-invalid @enderror" placeholder="No Induk Kependudukan">
                 @error('nik_anak')
                     <div class="invalid-feedback">
